@@ -22,7 +22,7 @@ import java.io.IOException;
  * ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'zhangtao552';
  * FLUSH PRIVILEGES;
  */
-public class BinLogTest {
+public class BinLogListener {
 
     /**
      * --------Update-----------
@@ -67,9 +67,7 @@ public class BinLogTest {
                 System.out.println(data);
             }
         });
-
         client.connect();
-
     }
 
 }
